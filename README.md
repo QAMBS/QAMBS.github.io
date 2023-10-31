@@ -1,6 +1,4 @@
 
-<title>QAMBS</title>
-
 
 </head>
 
