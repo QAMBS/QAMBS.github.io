@@ -28,31 +28,82 @@
 A seminar/journal club/reading group on Quantum Algorithms for Many Body Systems.<br>
 
       <p>Keywords: integrability, dual-unitarity, ground state preparation, time evolution, entanglement generation and propagation.</p>
-<h2>Choose a Date:</h2>
 
-<!-- Input field for date selection -->
-<input type="date" id="calendar" onchange="showSelectedDate()">
+<h2>Interactive Event Calendar</h2>
 
-<!-- Display selected date -->
-<p id="selectedDate"></p>
+<div id="calendar" class="calendar"></div>
+<div id="events" class="events"></div>
 
 <script>
-    // Function to display the selected date
-    function showSelectedDate() {
-        // Get the selected date from the input element
-        var selectedDate = document.getElementById("calendar").value;
+    // Initialize current date
+    var currentDate = new Date();
 
-        // Display the selected date
-        document.getElementById("selectedDate").textContent = "Selected Date: " + selectedDate;
+    // Function to render calendar for a given month
+    function renderCalendar(year, month) {
+        var calendarElement = document.getElementById('calendar');
+        var eventsElement = document.getElementById('events');
+        calendarElement.innerHTML = ''; // Clear previous calendar
+        eventsElement.innerHTML = ''; // Clear previous events
+
+        // Get the first day and the total number of days in the month
+        var firstDay = new Date(year, month, 1);
+        var lastDay = new Date(year, month + 1, 0);
+        var daysInMonth = lastDay.getDate();
+
+        // Render day boxes for each day of the month
+        for (var i = 1; i <= daysInMonth; i++) {
+            var dayElement = document.createElement('div');
+            dayElement.textContent = i;
+            dayElement.className = 'day';
+            dayElement.setAttribute('data-date', year + '-' + (month + 1) + '-' + i);
+            dayElement.onclick = function() {
+                var selectedDate = this.getAttribute('data-date');
+                showEvents(selectedDate);
+            };
+            calendarElement.appendChild(dayElement);
+        }
     }
+
+    // Function to display events for a selected date
+    function showEvents(date) {
+        var eventsElement = document.getElementById('events');
+        eventsElement.innerHTML = ''; // Clear previous events
+
+        // Example: Fetch events for the selected date (this could come from a database or other data source)
+        var events = [
+            { date: '2024-04-15', title: 'Meeting with Client' },
+            { date: '2024-04-20', title: 'Birthday Party' },
+            { date: '2024-04-25', title: 'Project Deadline' }
+        ];
+
+        // Filter events for the selected date
+        var filteredEvents = events.filter(function(event) {
+            return event.date === date;
+        });
+
+        // Display events for the selected date
+        if (filteredEvents.length > 0) {
+            var eventsHtml = '<h3>Events on ' + date + ':</h3>';
+            filteredEvents.forEach(function(event) {
+                eventsHtml += '<p>' + event.title + '</p>';
+            });
+            eventsElement.innerHTML = eventsHtml;
+        } else {
+            eventsElement.innerHTML = '<p>No events for ' + date + '</p>';
+        }
+    }
+
+    // Render the calendar for the current month
+    renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
+
 </script>
 
-<h2>Preparing for future sessions - Choose your topics!</h2>
-In the poll below you can propose any research question you would like to address during our seminars. Please do this, so that we can shape the seminar cycle in the most beneficial way for us all.<br><br>
-<div class="strawpoll-embed" id="strawpoll_61gDmKlzWZw" style="height: 708px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_61gDmKlzWZw" src="https://strawpoll.com/embed/61gDmKlzWZw" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>      
-<h2 id="toc_1">Schedule</h2>
-<p>From 11:00 to 12:00, every other Tuesday of the month, at <a href='https://uva-live.zoom.us/j/2529289100'>this Zoom link</a>. First 45 minutes: presentation of own work or a talk by an invited speaker. Remaining time: questions and discussion.</p>
 
+
+
+
+
+       
 
 
 
@@ -87,7 +138,16 @@ and, if time permits, discuss spin transport coefficients and hydrodynamics.
 Nathan Fitzpatrick (Quantinuum)<br> <em>Simulating non-unitary dynamics using quantum signal processing with unitary block encoding
  <a href='https://arxiv.org/abs/2303.06161'>https://arxiv.org/abs/2303.06161</a><br>
 </ul>
-       
+
+<h2>Preparing for future sessions - Choose your topics!</h2>
+In the poll below you can propose any research question you would like to address during our seminars. Please do this, so that we can shape the seminar cycle in the most beneficial way for us all.<br><br>
+<div class="strawpoll-embed" id="strawpoll_61gDmKlzWZw" style="height: 708px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_61gDmKlzWZw" src="https://strawpoll.com/embed/61gDmKlzWZw" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>      
+<h2 id="toc_1">Schedule</h2>
+<p>From 11:00 to 12:00, every other Tuesday of the month, at <a href='https://uva-live.zoom.us/j/2529289100'>this Zoom link</a>. First 45 minutes: presentation of own work or a talk by an invited speaker. Remaining time: questions and discussion.</p>
+
+
+
+   
 <h2 id="toc_2">Past meetings</h2>
 <details>
    <summary>Click to expand the list of past meetings</summary>
