@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QAMBS</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font for a techy vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background: #f8f9fa;
+      color: #343a40;
+      padding-top: 70px;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-top: 1.5rem;
+    }
+    .lead {
+      font-size: 1.125rem;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+    }
+    header p {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">QAMBS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarContent" aria-controls="navbarContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#past-meetings">Past Meetings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#future-topics">Future Topics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#calendar">Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mailing-list">Mailing List</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container my-4">
+    <!-- Header Section -->
+    <header class="mb-4">
+      <h1 class="display-4">QAMBS</h1>
+      <p class="lead">A seminar/journal club/reading group on Quantum Algorithms for Many Body Systems.</p>
+      <p>Keywords: integrability, dual-unitarity, ground state preparation, time evolution, entanglement generation and propagation, tensor networks, topological phases.</p>
+    </header>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="mb-5">
+      <h2>Schedule</h2>
+      <p>From 11:00 to 12:00, every other Tuesday of the month, at <a href="https://uva-live.zoom.us/j/2529289100" target="_blank">this Zoom link</a>. First 45 minutes: presentation of own work or a talk by an invited speaker. Remaining time: questions and discussion.</p>
+
+      <!-- Schedule Items as Cards -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">08/04/25</h5>
+          <p class="card-text">
+            <strong>Eric Vernier (CNRS)</strong><br>
+            <em>Strong zero modes in integrable quantum circuits</em><br>
+            <a href="https://arxiv.org/abs/2401.12305" target="_blank">https://arxiv.org/abs/2401.12305</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">22/04/25</h5>
+          <p class="card-text">
+            <strong>Rustem Sharipov (University of Ljubljana)</strong><br>
+            <em>Ergodic behaviors in reversible 3-state cellular automata</em><br>
+            <a href="https://arxiv.org/abs/2503.16593" target="_blank">https://arxiv.org/abs/2503.16593</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">06/05/25</h5>
+          <p class="card-text">
+            <strong>Maximilian Lutz</strong><br>
+            <em>Adiabatic quantum state preparation in integrable models</em><br>
+            <a href="https://arxiv.org/abs/2503.21741" target="_blank">https://arxiv.org/abs/2503.21741</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar Embed Section -->
+    <section id="calendar" class="mb-5">
+      <h2>Calendar synchronization</h2>
+      <p>You can automatically update the QAMBS appointments in your calendar by pressing 'Subscribe' in the calendar box below.</p>
+      <iframe src="https://embed.styledcalendar.com/#3btQDK6hxjVYgMnbMpn8" title="Styled Calendar" class="w-100" style="border: none; height: 400px;"></iframe>
+      <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+    </section>
+
+    <!-- Future Topics / Poll Section -->
+    <section id="future-topics" class="mb-5">
+      <h2>Preparing for future sessions - Choose your topics!</h2>
+      <p>In the poll below you can propose any research question you would like to address during our seminars. Please do this, so that we can shape the seminar cycle in the most beneficial way for us all.</p>
+      <div class="d-flex justify-content-center">
+        <div class="strawpoll-embed" id="strawpoll_61gDmKlzWZw" style="height: 708px; max-width: 640px; width: 100%;">
+          <iframe title="StrawPoll Embed" id="strawpoll_iframe_61gDmKlzWZw" src="https://strawpoll.com/embed/61gDmKlzWZw" style="width: 100%; height: 100%;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe>
+          <script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Meetings Section -->
+    <section id="past-meetings" class="mb-5">
+      <h2>Past meetings</h2>
+      <details>
+        <summary>Click to expand the list of past meetings</summary>
+        <div class="mt-3">
+          <!-- Past Meeting Items as Cards -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">25/03/25</h5>
+              <p class="card-text">
+                <strong>Nicolas Laflorencie (CNRS)</strong><br>
+                <em>Universal signatures of Majorana zero modes in critical Kitaev chains</em><br>
+                <a href="https://arxiv.org/abs/2311.07571" target="_blank">https://arxiv.org/abs/2311.07571</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">25/02/25</h5>
+              <p class="card-text">
+                <strong>Alexander Miessen (IBM Research – Zürich, University of Zürich)</strong><br>
+                <em>Benchmarking digital quantum simulations above hundreds of qubits using quantum critical dynamics</em><br>
+                <a href="https://arxiv.org/abs/2404.08053" target="_blank">https://arxiv.org/abs/2404.08053</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">11/02/25</h5>
+              <p class="card-text">
+                <strong>Hyeonjun Yeo (Seoul National University)</strong><br>
+                <em>Reducing Circuit Depth in Quantum State Preparation for Quantum Simulation Using Measurements and Feedforward</em><br>
+                <a href="https://arxiv.org/abs/2501.02929" target="_blank">https://arxiv.org/abs/2501.02929</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">28/01/25</h5>
+              <p class="card-text">
+                <strong>Alberto Zorzato (Amsterdam)</strong><br>
+                <em>Brick Wall Quantum Circuits with Global Fermionic Symmetry</em><br>
+                <a href="https://arxiv.org/abs/2402.18440" target="_blank">https://arxiv.org/abs/2402.18440</a>
+              </p>
+            </div>
+          </div>
+          <!-- Continue adding past meeting cards as needed -->
+        </div>
+      </details>
+    </section>
+
+    <!-- Mailing List Section -->
+    <section id="mailing-list" class="mb-5">
+      <h2>Mailing list</h2>
+      <p>You can sign up to the mailing list by sending an email to <em>qambs+subscribe@googlegroups.com</em>. After you signed up, you can send emails to the list by sending the email to <em>qambs@googlegroups.com</em>.</p>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="mb-5">
+      <h2>Organizers</h2>
+      <p>K. Schoutens and A. Zorzato (we thank the previous organizer J. Kattemölle for allowing us to use the pre-existing infrastructure for the website)</p>
+    </section>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
