@@ -1,563 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
-   body { background: rgba(0,0,0,.13) !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-</style>
-
-
-<title>QAMBS</title>
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QAMBS</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font for a techy vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background: #f8f9fa;
+      color: #343a40;
+      padding-top: 70px;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-top: 1.5rem;
+    }
+    .lead {
+      font-size: 1.125rem;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+    }
+    header p {
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
-
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-offset-2 col-md-8 ">
-<p></p>
-      <h1 id="toc_0">QAMBS</h1>
-A seminar/journal club/reading group on Quantum Algorithms for Many Body Systems.<br>
-
-      <p>Keywords: integrability, dual-unitarity, ground state preparation, time evolution, entanglement generation and propagation, tensor networks, topological phases.</p>
-<h2 id="toc_1">Schedule</h2>
-<p>From 11:00 to 12:00, every other Tuesday of the month, at <a href='https://uva-live.zoom.us/j/2529289100'>this Zoom link</a>. First 45 minutes: presentation of own work or a talk by an invited speaker. Remaining time: questions and discussion.</p>
-
-
-
-<ul>
-    <li><p>08/04/25<br>
-Eric Vernier (CNRS)<br> <em>Strong zero modes in integrable quantum circuits
- <a href='https://arxiv.org/abs/2401.12305'>https://arxiv.org/abs/2401.12305</a><br>
-</ul>   
-     
-<ul>
-    <li><p>22/04/25<br>
-Rustem Sharipov (University of Ljubljana)<br> <em>Ergodic behaviors in reversible 3-state cellular automata
- <a href='https://arxiv.org/abs/2503.16593'>https://arxiv.org/abs/2503.16593</a><br>
-</ul>   
-
-<ul>
-    <li><p>06/05/25<br>
-Maximilian Lutz (Max-Planck-Institut für Quantenoptik)<br> <em>Adiabatic quantum state preparation in integrable models
- <a href='https://arxiv.org/abs/2503.21741'>https://arxiv.org/abs/2503.21741</a><br>
-</ul>       
-       
-
-
-
-
-<iframe src="https://embed.styledcalendar.com/#3btQDK6hxjVYgMnbMpn8" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
-<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
-
-<h2>Preparing for future sessions - Choose your topics!</h2>
-In the poll below you can propose any research question you would like to address during our seminars. Please do this, so that we can shape the seminar cycle in the most beneficial way for us all.<br><br>
-<div class="strawpoll-embed" id="strawpoll_61gDmKlzWZw" style="height: 708px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_61gDmKlzWZw" src="https://strawpoll.com/embed/61gDmKlzWZw" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>      
-
-
-   
-<h2 id="toc_2">Past meetings</h2>
-<details>
-   <summary>Click to expand the list of past meetings</summary>
-<ul>
-    <li><p>25/03/25<br>
-Nicolas Laflorencie (CNRS)<br> <em>Universal signatures of Majorana zero modes in critical Kitaev chains
- <a href='https://arxiv.org/abs/2311.07571'>https://arxiv.org/abs/2311.07571</a><br>
-</ul>   
-   
- <ul>
-    <li><p>25/02/25<br>
- Alexander Miessen (IBM Research – Zürich, University of Zürich)<br> <em>Benchmarking digital quantum simulations above hundreds of qubits using quantum critical dynamics
- <a href='https://arxiv.org/abs/2404.08053'>https://arxiv.org/abs/2404.08053</a><br>
-</ul>   
-
-<ul>
-    <li><p>11/02/25<br>
-Hyeonjun Yeo (Seoul National University)<br> <em>Reducing Circuit Depth in Quantum State Preparation for Quantum Simulation Using Measurements and Feedforward
- <a href='https://arxiv.org/abs/2501.02929'>https://arxiv.org/abs/2501.02929</a><br>
-</ul>  
- <ul>
-    <li><p>28/01/25<br>
- Alberto Zorzato (Amsterdam)<br> <em>Brick Wall Quantum Circuits with Global Fermionic Symmetry
- <a href='https://arxiv.org/abs/2402.18440'>https://arxiv.org/abs/2402.18440</a><br>
-</ul>   
-
-<ul>
-    <li><p>25/06/24<br>
- Guglielmo Lami (Cergy Paris Univ.) - Also in presence as a CMT seminar at the University of Amsterdam<br> <em>Magic of Matrix Product States
-<a class="btn btn-light" data-toggle="collapse" href="#collapseWB" role="button" aria-expanded="false" aria-controls="collapseExample">
- Abstract
-  </a>
-<div class="collapse" id="collapseWB">
-  <div class="card card-body">
- Nonstabilizerness, or magic, is a critical quantum resource that, together with entanglement, characterizes the non-classical complexity of quantum states. Here, we address the problem of quantifying the magic of Matrix Product States (MPS) with bond dimension $\chi$. 
- First, we show how Stabilizer Rényi Entropies (SRE) can be estimated by means of a simple perfect sampling of the MPS over the Pauli string configurations. Second, we consider random Matrix Product States (RMPS). We demonstrate that the 2-SRE converges to that of Haar random states as N/chi^2,
- where N is the system size. This indicates that MPS with a modest bond dimension are as magical as generic states. Finally, we introduce the ensemble of Clifford enhanced Matrix Product States (CMPS), built by the action of Clifford unitaries on RMPS. Leveraging our previous result, 
- we show that CMPS can approximate $4$-spherical designs with arbitrary accuracy. Our findings indicate that combining Clifford unitaries with polynomially complex tensor network states can generate highly non-trivial quantum states.
-</div><br>
-</ul>  
-   
-<ul>
-    <li><p>11/06/24<br>
- Laurens Lootens (Cambridge)<br> <em>Dualities in one-dimensional quantum lattice models: symmetric Hamiltonians and matrix product operator intertwiners
- <a href='https://arxiv.org/abs/2112.09091'>https://arxiv.org/abs/2112.09091</a><br>
-</ul>  
-   
-<ul>
-    <li><p>28/05/24<br>
- Nathan Fitzpatrick (Quantinuum)<br> <em>Simulating non-unitary dynamics using quantum signal processing with unitary block encoding
- <a href='https://arxiv.org/abs/2303.06161'>https://arxiv.org/abs/2303.06161</a><br>
-</ul>  
-   
-<ul>
-    <li><p>14/05/24<br>
-Joris Kattemolle (University of Konstanz)<br> <em>Optimal qubit routing for tilable circuits
-<a class="btn btn-light" data-toggle="collapse" href="#collapseWB" role="button" aria-expanded="false" aria-controls="collapseExample">
- Abstract
-  </a>
-<div class="collapse" id="collapseWB">
-  <div class="card card-body">
-An important step in the compilation of a given quantum circuit on a given target device is qubit routing; the insertion of SWAP gates so that the required two-qubit gates can be performed on the hardware given the restricted qubit connectivity of that hardware. Noisy intermediate-scale and early fault-tolerant quantum computers will be severely limited in their capabilities. This motivates the search for optimal SWAP strategies. This is at stake with the fact that finding the optimal SWAP strategy is NP hard. However, both A) quantum circuits for the quantum simulation of condensed matter systems and B) hardware connectivity graphs, typically have a spatial periodic structure that can be exploited to make the problem tractable. I will present a method that does so and apply it to various circuits arising in quantum simulation. Assuming arbitrary two-qubit gates have unit depth, this leads to surprisingly low SWAP overheads. For example, the quantum circuit for the quantum simulation of the Heisenberg model on A), a square grid with nearest and next-nearest neighbour coupling, can be performed on B), a quantum computer with a square-grid coupling graph with C), no SWAP overhead at all. 
-This is work in preparation and constitutes a generalisation of https://arxiv.org/abs/2402.08752
-</div>
-
-</ul>
-
-
-<ul>
-    <li><p>30/04/24<br>
- Lorenzo Piroli (University of Bologna)<br> <em>Approximating many-body quantum states with quantum circuits and measurements
- <a href='https://arxiv.org/abs/2403.07604'>https://arxiv.org/abs/2403.07604</a><br>
-</ul>      
-
-<ul>
-    <li><p>16/04/24<br>
- Lenart Zadnik (University of Ljubljana)<br> <em>Casimir spin pumps
-<a class="btn btn-light" data-toggle="collapse" href="#collapseWB" role="button" aria-expanded="false" aria-controls="collapseExample">
- Abstract
-  </a>
-<div class="collapse" id="collapseWB">
-  <div class="card card-body">
-I will describe a novel class of exactly solvable quantum unitary circuits on qudits. Their key feature is architecture that breaks 
-parity and time reversal symmetries, while retaining the combined PT symmetry. A consequence of this chirality is a spin transport with 
-a finite drift: the circuit acts as a quantum spin pump. The drift velocity is universal in that it depends only on the Casimir invariant of the 
-local quantum spaces and survives non-integrable perturbations of the circuit. I will comment on connection to integrable Troterizations 
-and, if time permits, discuss spin transport coefficients and hydrodynamics.
-</div>
-
-</ul>      
- <ul>
-    <li><p>26/03/24<br>
- Simon Benjamin (Oxford)<br> <em>Grid-based methods for chemistry simulations on a quantum computer
- <a href='https://arxiv.org/abs/2202.05864'>https://arxiv.org/abs/2202.05864</a><br>
-</ul>      
-
-
-<ul>
-    <li><p>05/03/24<br>
- Esperanza López (Universidad Autónoma de Madrid)<br> <em>The Bethe Ansatz as a Quantum Circuit
- <a href='https://arxiv.org/abs/2309.14430v1'>https://arxiv.org/abs/2309.14430v1</a><br>
-</ul>
-
-   
-<ul>
-    <li><p>20/02/24<br>
- Christian Mendl (TU Munich)<br> <em>Riemannian quantum circuit optimization for Hamiltonian simulation <a href='https://arxiv.org/abs/2212.07556'>https://arxiv.org/abs/2212.07556</a><br>
-</ul>
-   
-<ul>
-    <li><p>06/02/24<br>
- Christian Kokail (Harvard) 16:30 (CET) instead of the usual time<br> <em>Exploring Large-Scale Entanglement in Quantum Simulation <a href='https://arxiv.org/abs/2306.00057'>https://arxiv.org/abs/2306.00057</a><br>
-</ul>
-
-   
-<ul>
-
-    <li><p>12/12/23<br>
- Jannis Ruh (University of Technology Sydney)<br> <em>Digital quantum simulation of the BCS model with a central-spin-like quantum processor</em><br> <a href='https://arxiv.org/abs/2209.09225'>https://arxiv.org/abs/2209.09225</a><br>
-
-   <a class="btn btn-light" data-toggle="collapse" href="#collapseWB" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseWB">
-  <div class="card card-body">
-    The simulation of quantum systems is one of the most promising applications of quantum computers. In this paper we present a quantum algorithm to perform digital quantum simulations of the BCS model on a quantum register with a star shaped connectivity map, as it is, e.g., featured by color centers in diamond. We show how to effectively translate the problem onto the quantum hardware and implement the algorithm using only the native interactions between the qubits. Furthermore we discuss the complexity of the circuit. We use the algorithm to simulate the dynamics of the BCS model by subjecting its mean-field ground state to a time-dependent perturbation. The quantum simulation algorithm is studied using a classical simulation.
-</div>
-
-
-
-
-
-
-   
-    <li><p>28/11/23<br>
- Takuya Okuda (University of Tokyo)<br> <em>Conserved charges in the quantum simulation of integrable spin chains</em><br> <a href='https://arxiv.org/abs/2208.00576'>https://arxiv.org/abs/2208.00576</a><br>
-
-   <a class="btn btn-light" data-toggle="collapse" href="#collapseWB" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseWB">
-  <div class="card card-body">
-    When simulating the time evolution of quantum many-body systems on a digital quantum computer, one faces the challenges of quantum noise and of the Trotter error due to time discretization. The Trotter error in integrable spin chains can be under control if the discrete time evolution preserves integrability. In this work we implement, on a real quantum computer and on classical simulators, the integrable Trotterization of the spin-1/2 Heisenberg XXX spin chain. We study how quantum noise affects the time evolution of several conserved charges, and observe the decay of the expectation values. We in addition study the early time behaviors of the time evolution, which can potentially be used to benchmark quantum devices and algorithms in the future. We also provide an efficient method to generate the conserved charges at higher orders.
-</div>
-  
-  
-    <li><p>14/11/23<br>
- Dirk Schuricht (Utrecht University)<br> <em>Phase diagram of an extended parafermion chain, and its frustration-free point</em><br> <a href='https://arxiv.org/abs/2106.15823'>https://arxiv.org/abs/2106.15823</a><br><a href='https://arxiv.org/abs/2005.12825'>https://arxiv.org/abs/2005.12825</a><br>
-
-  </li></p>
-  
-
-    <li><p>26/06/23<br>
-   Wouter Buijsman (Ben-Gurion University of the Negev)<br> <em>Quantum many-body systems in thermal equilibrium (JC-style)</em><br> <a href='https://arxiv.org/abs/2204.08349'>arxiv.org/abs/2204.08349</a> by Álvaro M. Alhambra<br>
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseWB" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseWB">
-  <div class="card card-body">
-    The thermal or equilibrium ensemble is one of the most ubiquitous states of matter. For models comprised of many locally interacting quantum particles, it describes a wide range of physical situations, relevant to condensed matter physics, high energy physics, quantum chemistry and quantum computing, among others. We give a pedagogical overview of some of the most important universal features about the physics and complexity of these states, which have the locality of the Hamiltonian at its core. We focus on mathematically rigorous statements, many of them inspired by ideas and tools from quantum information theory. These include bounds on their correlations, the form of the subsystems, various statistical properties, and the performance of classical and quantum algorithms. We also include a summary of a few of the most important technical tools, as well as some self-contained proofs.
-  </div>
-</div>
-  </li></p>
-
-  <li><p>26/05/23 <br>
-  Joris Kattemölle (University of Konstanz) <br> <em>Line-graph qubit routing: from kagome to heavy-hex and more</em><br> <a href='https://arxiv.org/abs/2306.05385'>https://arxiv.org/abs/2306.05385</a> (2023)<br>
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseJK" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseJK">
-  <div class="card card-body">
-    Many quantum computing platforms have a restricted connectivity of their qubits, as captured by their connectivity graph. This poses a challenge for running algorithms that require a connectivity graph different from what the hardware can provide. Such algorithms arise naturally in the simulation of lattice-based spin models on quantum computers where there is a mismatch between the lattice to be simulated and the connectivity graph of the quantum hardware. To overcome this challenge and fully utilize the hardware, efficient qubit routing strategies are necessary. In this work, we present line-graph routing: a general method for qubit routing when the required connectivity graph of the algorithm is a line graph and the hardware connectivity graph is a heavy graph. We demonstrate the effectiveness of our approach by routing circuits on kagome and shuriken lattices (including those needed for quantum simulation) to hardware with heavy-hex and heavy-square-octagon connectivity, respectively. Benchmarking shows the ability of line-graph routing to outperform established general-purpose methods. Our method has direct applications in the quantum simulation of lattice-based models and aids in the exploration of the capabilities of near-term quantum hardware.
-  </div>
-</div>
-  </li></p>
-
-  <li><p>28/04/23 <br>[One hour earlier than usual, 14:15 CEST (Netherlands,Germany,...) = 21:15 JST (Japan)]<br>
-  Nobuyuki Yoshioka (University of Tokyo) <br> <em>Hunting for quantum-classical crossover in condensed matter problems</em><br> <a href='https://arxiv.org/abs/2210.14109'>arxiv.org/abs/2210.14109</a> (2022) <br>
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseNY" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseNY">
-  <div class="card card-body">
-    The intensive pursuit for quantum algorithms with speedup in terms of computational complexity has further led to this modernized crucial question: <em>When and how will quantum computers outperform classical computers?</em>. The next milestone in the context of this quantum transcendence is undoubtedly the realization of quantum acceleration in practical problems. Here we provide a clear evidence and arguments that the primary target is likely to be condensed matter physics. Our primary contributions are summarized as follows: 1) Proposal of systematic error/runtime analysis on state-of-the-art classical algorithm based on tensor networks; 2) Dedicated and high-resolution analysis on quantum resource performed at the level of executable logical instructions; 3) Clarification of quantum-classical crosspoint for ground-state simulation to be within runtime of hours using only a few hundreds of thousand physical qubits for 2d Heisenberg and 2d Fermi-Hubbard models. To our knowledge, we argue that condensed matter problems offer the earliest platform for demonstration of practical quantum advantage that is order-of-magnitude more feasible than ever known candidates, in terms of both qubit counts and total runtime.
-  </div>
-</div>
-  </li></p>
-
-     <li><p>24/03/23<br>
-         Kevin Smith (Yale) <br> <em>Leveraging measurements and symmetry to speed-up the preparation of a matrix product state</em><br> <a href='https://arxiv.org/pdf/2210.17548.pdf'>arxiv.org/pdf/2210.17548.pdf</a> (2022) <br>
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseKS" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseKS">
-  <div class="card card-body">
-    The ground state of the spin-1 Affleck, Kennedy, Lieb and Tasaki (AKLT) model is a paradigmatic example of both a matrix product state and a symmetry-protected topological phase, and additionally holds promise as a resource state for measurement-based quantum computation. Having a nonzero correlation length, the AKLT state cannot be exactly prepared by a constant-depth unitary circuit composed of local gates. In this talk, I will demonstrates that this no-go limit can be evaded by augmenting a constant-depth circuit with fusion measurements, such that the total preparation time is independent of system size. I will present experimental results collected on an IBM Quantum processor that indicate our measurement-assisted scheme outperforms purely unitary protocol. I will also demonstrate the utility of prepared AKLT states as "quantum wires" for teleportation. This work serves to provide an efficient strategy to prepare a specific resource in the form of the AKLT state and, more broadly, experimentally demonstrates the possibility for realizable improvement in state preparation afforded by measurement-based circuit depth reduction strategies on NISQ-era devices.
-  </div>
-</div>
-  </li></p>
-
-
-     <li><p>*23/02/23* (one day earlier than usual)<br>
-         Esperanza López (Universidad Autónoma de Madrid) <br> <em>Algebraic Bethe Circuits </em> <br> <a href='https://arxiv.org/abs/2202.04673'>arxiv.org/abs/2202.04673</a> (2022) <br>
-
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseEs" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseEs">
-  <div class="card card-body">
-    The Algebraic Bethe Ansatz (ABA) is a highly successful analytical method used to exactly solve several physical models in both statistical mechanics and condensed-matter physics. Here we bring the ABA into unitary form, for its direct implementation on a quantum computer. This is achieved by distilling the non-unitary R matrices that make up the ABA into unitaries using the QR decomposition. Our algorithm is deterministic and works for both real and complex roots of the Bethe equations. We illustrate our method on the spin-12 XX and XXZ models. We show that using this approach one can efficiently prepare eigenstates of the XX model on a quantum computer with quantum resources that match previous state-of-the-art approaches. We run small-scale error-mitigated implementations on the IBM quantum computers, including the preparation of the ground state for the XX and XXZ models on 4 sites. Finally, we derive a new form of the Yang-Baxter equation using unitary matrices, and also verify it on a quantum computer.
-  </div>
-</div>
-  </li></p>
-
-
-    <li><p>27/01/23<br>
-        Seenivasan Hariharan (UvA) <br> <em>Simulating Models of Challenging Correlated Molecules and Materials on the Sycamore Quantum Processor</em>   <br> <a href='https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040318'>PRX Quantum 3, 040318 (2022)</a> <br> ('Journal Club') <br>
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseSe" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseSe">
-  <div class="card card-body">
-    Simulating complex molecules and materials is an anticipated application of quantum devices. With the emergence of hardware designed to target strong quantum advantage in artificial tasks, we examine how the same hardware behaves in modeling physical problems of correlated electronic structure. We simulate static and dynamical electronic structure on a superconducting quantum processor derived from Google’s Sycamore architecture for two representative correlated electron problems: the nitrogenase iron-sulfur molecular clusters and α-ruthenium trichloride, a proximate spin-liquid material. To do so, we simplify the electronic structure into low-energy spin models that fit on the device. With extensive error mitigation and assistance from classical recompilation and simulated data, we achieve quantitatively meaningful results deploying about one fifth of the gate resources used in artificial quantum advantage experiments on a similar architecture. This increases to over half of the gate resources when choosing a model that suits the hardware. Our work serves to convert artificial measures of quantum advantage into a physically relevant setting.
-  </div>
-</div>
-  </li></p>
-
-  <li><p>23/13/22 <br>
-        Discussion about future topics (see list below)
-  </li></p>
-
-  <li><p>25/11/22 <br>
-        Yuan Miao (Galileo Galilei Institute for Theoretical Physics) <br> <em>Integrable quantum circuits from statistical mechanics </em><br> <a href='https://arxiv.org/abs/2206.15142'>arxiv.org/abs/2206.15142</a> and work in preparation <br>
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseYu" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseYu">
-  <div class="card card-body">
-    I will explain some recent works on constructing integrable quantum circuits using methods in statistical mechanics of lattice models, such as Yang-Baxter relation and star-triangle relation. I will demonstrate the construction using the renowned 6-vertex model and Potts model. I will present a proof of the recently conjectured integrability in so-called Potts circuits by Vladimir, Denis and their collaborators (Phys. Rev. B 105, 144306). The construction can be extended to what I call "Ashkin-Teller circuit'', which has not been studied previously.
-  </div>
-</div>
-
-  </li></p>
-
-    <li><p>28/10/22 <br>
-        Jordi Weggemans (QuSoft) <br> <em>Complexity of the Guided Local Hamiltonian Problem: Improved Parameters and Extension to Excited States</em> <br> <a href='https://arxiv.org/abs/2207.10097'>arxiv.org/abs/2207.10097</a> <br>
-
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseJo" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseJo">
-  <div class="card card-body">
-    Estimating the ground state energy of a local Hamiltonian is a central problem in quantum many-body physics. Gharibian and Le Gall (STOC 2022) recently introduced the guided local Hamiltonian problem (GLH), which is a variant of the local Hamiltonian problem (LH), where a classical approximation of a ground state is given as an additional input. Whilst LH is known to be QMA-complete (and therefore also ‘hard’ even with quantum computers), Gharibian and Le Gall showed that GLH with 6-local Hamiltonians is BQP-complete when the guiding vector has fidelity (inverse-polynomially) close to 1/2 with a ground state – meaning that in this setting we have a worst-case quantum advantage. For this talk I will introduce the GLH problem, argue why it is relevant, and share some results from a recent work in which we optimally improve both the locality and the overlap parameters, as well as extend the hardness results to the setting of excited states.
-  </div>
-</div>
-
-
-</li></p>
-
-  <li><p>23/09/22 <br>
-      Raul Santos (Phasecraft) <br> <em>Towards near-term quantum simulation of materials</em> <br> <a href='https://arxiv.org/abs/2205.15256'>arxiv.org/abs/2205.15256</a>
-
-
-<br>
-
-
-<a class="btn btn-light" data-toggle="collapse" href="#collapseRa" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Abstract
-  </a>
-<div class="collapse" id="collapseRa">
-  <div class="card card-body">
-    Simulation of materials is one of the most promising applications of quantum computers. On near-term hardware the crucial constraint on these simulations is circuit depth. Many quantum simulation algorithms rely on a layer of unitary evolutions generated by each term in a Hamiltonian. This appears in time-dynamics as a single Trotter step, and in variational quantum eigensolvers under the Hamiltonian variational ansatz as a single ansatz layer. We present a new quantum algorithm design for materials modelling where the depth of a layer is independent of the system size. This design takes advantage of the locality of materials in the Wannier basis and employs a tailored fermionic encoding that preserves locality. We analyse the circuit costs of this approach and present a compiler that transforms density functional theory data into quantum circuit instructions -- connecting the physics of the material to the simulation circuit. The compiler automatically optimises circuits at multiple levels, from the base gate level to optimisations derived from the physics of the specific target material. We present numerical results for materials spanning a wide structural and technological range. Our results demonstrate a reduction of many orders of magnitude in circuit depth over standard prior methods that do not consider the structure of the Hamiltonian. For example our results improve resource requirements for Strontium Vanadate (SrVO3) from 864 to 180 qubits for a 3×3×3 lattice, and the circuit depth of a single Trotter or variational layer from 7.5×108 to depth 730. Although this is still beyond current hardware, our results show that materials simulation may be feasible on quantum computers without necessarily requiring scalable, fault-tolerant quantum computers, provided quantum algorithm design incorporates understanding of the materials and applications.
-  </div>
-</div>
-
-
-
-
-
-
-</li></p>
-
-</ul>
-</details>
- <br> 
-<h2 id="toc_3">Calendar synchronization</h2>
-<p>You can automatically update the QAMBS appointments in your calender by pressing 'Subscribe' in the calendar box above.</p>
-
-<h2 id="toc_3">Mailing list</h2>
-
-<p>You can sign up to the mailing list by sending an email to <em>qambs+subscribe@googlegroups.com</em>. After you signed up, you can send emails to the list by sending the email to <em>qambs@googlegroups.com</em>.</p>
-
-<h2 id="toc_4">Organizers</h2>
-
-<p>K. Schoutens and A. Zorzato (we thank the previous organizer J. Kattemölle for allowing us to use the pre-existing infrastructure for the website)</p>
-
-<h2 id="toc_5">Future topics</h2>
-<details>
-      <summary>Click to expand the list of future topics</summary>
-
-
-<li><b>Particle exchange statistics beyond fermions and bosons</b><br />
-Zhiyuan Wang, Kaden R. A. Hazzard<br />
-<a href="https://arxiv.org/abs/2308.05203">https://arxiv.org/abs/2308.05203</a><br />
-<ul class="org-ul">
-<li>It is commonly believed that there are only two types of particle exchange statistics in quantum mechanics, fermions and bosons, with the exception of anyons in two dimension. In principle, a second exception known as parastatistics, which extends outside of two dimensions, has been considered but was believed to be physically equivalent to fermions and bosons. In this paper we show that nontrivial parastatistics inequivalent to either fermions or bosons can exist in physical systems. These new types of identical particles obey generalized exclusion principles, leading to exotic free-particle thermodynamics distinct from any system of free fermions and bosons. We formulate our theory by developing a second quantization of paraparticles, which naturally includes exactly solvable non-interacting theories, and incorporates physical constraints such as locality. We then construct a family of exactly solvable quantum spin models in one and two dimensions where free paraparticles emerge as quasiparticle excitations, and their exchange statistics can be physically observed and is notably distinct from fermions and bosons. This demonstrates the possibility of a new type of quasiparticle in condensed matter systems, and, more speculatively, the potential for previously unconsidered types of elementary particles.<br /></li>
-</ul></li>
-      
-<li><b>Optimal realization of Yang-Baxter gate on quantum computer</b><br />
-Kun Zhang, Kwangmin Yu, Kun Hao, Vladimir Korepin<br />
-<a href="https://arxiv.org/abs/2307.16781">https://arxiv.org/abs/2307.16781</a><br />
-<ul class="org-ul">
-<li>We study how to optimally realize the Yang-Baxter gates on quantum computers. We consider two types of Yang-Baxter gates. One is from the study of the topological entanglement. The other is from the quantum integrable circuit. We present the optimal realizations of Yang-Baxter gates with the minimal number of CNOT or Rzz gates. We also study the pulse realizations of Yang-Baxter gates. We test and compare the different realizations on IBM quantum computers. We find that the pulse realizations of Yang-Baxter gates always have higher gate fidelity compared to the optimal CNOT or Rzz realizations. Based on the above optimal realizations, we demonstrate the simulation of Yang-Baxter equation on quantum computers. Our results provide a guideline for further experimental study based on the Yang-Baxter gate.<br /></li>
-</ul></li>
-   
-   
-<li><b>Exact Correlation Functions for Dual-Unitary Lattice Models in 1+1 Dimensions</b><br />
-Bruno Bertini, Pavel Kos, Tomaz Prosen<br />
-<a href="https://arxiv.org/abs/1904.02140">https://arxiv.org/abs/1904.02140</a><br />
-<ul class="org-ul">
-<li>We consider a class of quantum lattice models in 1+1 dimensions represented as local quantum circuits that enjoy a particular "dual-unitarity" property. In essence, this property ensures that both the evolution "in time" and that "in space" are given in terms of unitary transfer matrices. We show that for this class of circuits, generically non-integrable, one can compute explicitly all dynamical correlations of local observables. Our result is exact, non-pertubative, and holds for any dimension d of the local Hilbert space. In the minimal case of qubits (d=2) we also present a classification of all dual-unitary circuits which allows us to single out a number of distinct classes for the behaviour of the dynamical correlations. We find "non-interacting" classes, where all correlations are preserved, the ergodic and mixing one, where all correlations decay, and, interestingly, also classes that are are both interacting and non-ergodic.<br /></li>
-</ul></li>
-
-   
-<li><b>Hybrid algorithm for the time-dependent Hartree-Fock method using the Yang-Baxter equation on quantum computers</b><br />
-Sahil Gulania, Stephen K. Gray, Yuri Alexeev, Bo Peng, Niranjan Govind<br />
-<a href="https://arxiv.org/abs/2309.00737">https://arxiv.org/abs/2309.00737</a><br />
-<ul class="org-ul">
-<li>The time-dependent Hartree-Fock (TDHF) method is an approach to simulate the mean field dynamics of electrons within the assumption that the electrons move independently in their self-consistent average field and within the space of single Slater determinants. One of the major advantages of performing time dynamics within Hartree-Fock theory is the free fermionic nature of the problem, which makes TDHF classically simulatable in polynomial time. Here, we present a hybrid TDHF implementation for quantum computers. This quantum circuit grows with time; but with our recent work on circuit compression via the Yang-Baxter equation (YBE), the resulting circuit is constant depth. This study provides a new way to simulate TDHF with the aid of a quantum device as well as provides a new direction for the application of YBE symmetry in quantum chemistry simulations.<br /></li>
-</ul></li>
-
-<li><b>Uncovering Local Integrability in Quantum Many-Body Dynamics</b><br />
-Oles Shtanko, Derek S. Wang, Haimeng Zhang, Nikhil Harle, Alireza Seif, Ramis Movassagh, Zlatko Minev<br />
-<a href="https://arxiv.org/abs/2307.07552">https://arxiv.org/abs/2307.07552</a><br />
-<ul class="org-ul">
-<li>Interacting many-body quantum systems and their dynamics, while fundamental to modern science and technology, are formidable to simulate and understand. However, by discovering their symmetries, conservation laws, and integrability one can unravel their intricacies. Here, using up to 124 qubits of a fully programmable quantum computer, we uncover local conservation laws and integrability in one- and two-dimensional periodically-driven spin lattices in a regime previously inaccessible to such detailed analysis. We focus on the paradigmatic example of disorder-induced ergodicity breaking, where we first benchmark the system crossover into a localized regime through anomalies in the one-particle-density-matrix spectrum and other hallmark signatures. We then demonstrate that this regime stems from hidden local integrals of motion by faithfully reconstructing their quantum operators, thus providing a detailed portrait of the system's integrable dynamics. Our results demonstrate a versatile strategy for extracting hidden dynamical structure from noisy experiments on large-scale quantum computers.<br /></li>
-</ul></li>
-
-
-   
-<li><b>Quantum state preparation without coherent arithmetic</b><br />
-Sam McArdle, András Gilyén, Mario Berta<br />
-<a href="https://arxiv.org/pdf/2210.14892.pdf">https://arxiv.org/pdf/2210.14892.pdf</a><br />
-<ul class="org-ul">
-<li>We introduce a versatile method for preparing a quantum state whose amplitudes are given by some known function. Unlike existing approaches, our method does not require handcrafted reversible arithmetic circuits, or quantum memory loads, to encode the function values. Instead, we use a template quantum eigenvalue transformation circuit to convert a low cost block encoding of the sine function into the desired function. Our method uses only 4 ancilla qubits (3 if the approximating polynomial has definite parity), providing order-of-magnitude qubit count reductions compared to state-of-the-art approaches, while using a similar number of Toffoli gates if the function can be well represented by a polynomial or Fourier approximation. Like black-box methods, the complexity of our approach depends on the &rsquo;L2-norm filling-fraction&rsquo; of the function. We demonstrate the efficiency of our method for preparing states commonly used in quantum algorithms, such as Gaussian and Kaiser window states.<br /></li>
-</ul></li>
-
-<li><b>NLTS Hamiltonians from good quantum codes</b><br />
-Anurag Anshu, Nikolas P. Breuckmann, Chinmay Nirkhe<br />
-<a href="https://arxiv.org/abs/2206.13228">https://arxiv.org/abs/2206.13228</a><br />
-<ul class="org-ul">
-<li>The NLTS (No Low-Energy Trivial State) conjecture of Freedman and Hastings [2014] posits that there exist families of Hamiltonians with all low energy states of non-trivial complexity (with complexity measured by the quantum circuit depth preparing the state). We prove this conjecture by showing that the recently discovered families of constant-rate and linear-distance QLDPC codes correspond to NLTS local Hamiltonians.<br /></li>
-</ul></li>
-
-<li><b>Simpler (classical) and faster (quantum) algorithms for Gibbs partition functions</b><br />
-Srinivasan Arunachalam, Vojtech Havlicek, Giacomo Nannicini, Kristan Temme, and Pawel Wocjan<br />
-<a href="https://quantum-journal.org/papers/q-2022-09-01-789/">https://quantum-journal.org/papers/q-2022-09-01-789/</a><br />
-<ul class="org-ul">
-<li>We present classical and quantum algorithms for approximating partition functions of classical Hamiltonians at a given temperature. Our work has two main contributions: first, we modify the classical algorithm of Stefankovic, Vempala and Vigoda (J. ACM, 56(3), 2009) to improve its sample complexity; second, we quantize this new algorithm, improving upon the previously fastest quantum algorithm for this problem, due to Harrow and Wei (SODA 2020).<br />
-The conventional approach to estimating partition functions requires approximating the means of Gibbs distributions at a set of inverse temperatures that form the so-called cooling schedule. The length of the cooling schedule directly affects the complexity of the algorithm. Combining our improved version of the algorithm of Stefankovic, Vempala and Vigoda with the paired-product estimator of Huber (Ann. Appl. Probab., 25(2), 2015), our new quantum algorithm uses a shorter cooling schedule than previously known. This length matches the optimal length conjectured by Stefankovic, Vempala and Vigoda. The quantum algorithm also achieves a quadratic advantage in the number of required quantum samples compared to the number of random samples drawn by the best classical algorithm, and its computational complexity has quadratically better dependence on the spectral gap of the Markov chains used to produce the quantum samples.<br /></li>
-</ul></li>
-
-<li><b>A Sublinear-Time Quantum Algorithm for Approximating Partition Functions</b><br />
-Arjan Cornelissen, Yassine Hamoudi<br />
-<a href="https://arxiv.org/abs/2207.08643">https://arxiv.org/abs/2207.08643</a><br />
-<ul class="org-ul">
-<li>We present a novel quantum algorithm for estimating Gibbs partition functions in sublinear time with respect to the logarithm of the size of the state space. This is the first speed-up of this type to be obtained over the seminal nearly-linear time algorithm of Štefankovič, Vempala and Vigoda [JACM, 2009]. Our result also preserves the quadratic speed-up in precision and spectral gap achieved in previous work by exploiting the properties of quantum Markov chains. As an application, we obtain new polynomial improvements over the best-known algorithms for computing the partition function of the Ising model, and counting the number of k-colorings, matchings or independent sets of a graph.<br />
-Our approach relies on developing new variants of the quantum phase and amplitude estimation algorithms that return nearly unbiased estimates with low variance and without destroying their initial quantum state. We extend these subroutines into a nearly unbiased quantum mean estimator that reduces the variance quadratically faster than the classical empirical mean. No such estimator was known to exist prior to our work. These properties, which are of general interest, lead to better convergence guarantees within the paradigm of simulated annealing for computing partition functions.<br /></li>
-</ul></li>
-
-<li><b>On the complexity of quantum partition functions</b><br />
-Sergey Bravyi, Anirban Chowdhury, David Gosset, Pawel Wocjan<br />
-<a href="https://arxiv.org/abs/2110.15466">https://arxiv.org/abs/2110.15466</a><br />
-<ul class="org-ul">
-<li>The partition function and free energy of a quantum many-body system determine its physical properties in thermal equilibrium. Here we study the computational complexity of approximating these quantities for n-qubit local Hamiltonians. First, we report a classical algorithm with poly(n) runtime which approximates the free energy of a given 2-local Hamiltonian provided that it satisfies a certain denseness condition. Our algorithm combines the variational characterization of the free energy and convex relaxation methods. It contributes to a body of work on efficient approximation algorithms for dense instances of optimization problems which are hard in the general case, and can be viewed as simultaneously extending existing algorithms for (a) the ground energy of dense 2-local Hamiltonians, and (b) the free energy of dense classical Ising models. Secondly, we establish polynomial-time equivalence between the problem of approximating the free energy of local Hamiltonians and three other natural quantum approximate counting problems, including the problem of approximating the number of witness states accepted by a QMA verifier. These results suggest that simulation of quantum many-body systems in thermal equilibrium may precisely capture the complexity of a broad family of computational problems that has yet to be defined or characterized in terms of known complexity classes. Finally, we summarize state-of-the-art classical and quantum algorithms for approximating the free energy and show how to improve their runtime and memory footprint.<br /></li>
-</ul></li>
-
-<li><b>Algebraic Bethe Circuits</b><br />
-Alejandro Sopena, Max Hunter Gordon, Diego García-Martín, Germán Sierra, and Esperanza López\\ <a href="https://quantum-journal.org/papers/q-2022-09-08-796/">https://quantum-journal.org/papers/q-2022-09-08-796/</a><br />
-<ul class="org-ul">
-<li>The Algebraic Bethe Ansatz (ABA) is a highly successful analytical method used to exactly solve several physical models in both statistical mechanics and condensed-matter physics. Here we bring the ABA into unitary form, for its direct implementation on a quantum computer. This is achieved by distilling the non-unitary R matrices that make up the ABA into unitaries using the QR decomposition. Our algorithm is deterministic and works for both real and complex roots of the Bethe equations. We illustrate our method on the spin-12 XX and XXZ models. We show that using this approach one can efficiently prepare eigenstates of the XX model on a quantum computer with quantum resources that match previous state-of-the-art approaches. We run small-scale error-mitigated implementations on the IBM quantum computers, including the preparation of the ground state for the XX and XXZ models on 4 sites. Finally, we derive a new form of the Yang-Baxter equation using unitary matrices, and also verify it on a quantum computer.<br /></li>
-</ul></li>
-
-<li><b>A rapidly mixing Markov chain from any gapped quantum many-body system</b><br />
-Sergey Bravyi, Giuseppe Carleo, David Gosset, Yinchen Liu<br />
-<a href="https://arxiv.org/abs/2207.07044">https://arxiv.org/abs/2207.07044</a><br />
-<ul class="org-ul">
-<li>We consider the computational task of sampling a bit string x from a distribution π(x)=|⟨x|ψ⟩|2, where ψ is the unique ground state of a local Hamiltonian H. Our main result describes a direct link between the inverse spectral gap of H and the mixing time of an associated continuous-time Markov Chain with steady state π. The Markov Chain can be implemented efficiently whenever ratios of ground state amplitudes ⟨y|ψ⟩/⟨x|ψ⟩ are efficiently computable and the starting state of the chain satisfies a mild technical condition that can be efficiently checked. This extends a previously known relationship between sign-problem free Hamiltonians and Markov chains. The tool which enables this generalization is the so-called fixed-node Hamiltonian construction, previously used in Quantum Monte Carlo simulations to address the fermionic sign problem. We implement the proposed sampling algorithm numerically and use it to sample from the ground state of Haldane-Shastry Hamiltonian with up to 56 qubits. We observe empirically that our Markov chain based on the fixed-node Hamiltonian mixes more rapidly than the standard Metropolis-Hastings Markov chain.<br /></li>
-</ul></li>
-
-<li><b>Deterministic constant-depth preparation of the AKLT state on a quantum processor using fusion measurements</b><br />
-Kevin C. Smith, Eleanor Crane, Nathan Wiebe, S. M. Girvin<br />
-<a href="https://arxiv.org/pdf/2210.17548.pdf">https://arxiv.org/pdf/2210.17548.pdf</a><br />
-<ul class="org-ul">
-<li>The ground state of the spin-1 Affleck, Kennedy, Lieb and Tasaki (AKLT) model is a paradigmatic example of both a matrix product state and a symmetry-protected topological phase, and additionally holds promise as a resource state for measurement-based quantum computation. Having a nonzero correlation length, the AKLT state cannot be exactly prepared by a constant-depth unitary circuit composed of local gates. In this work, we demonstrate that this no-go limit can be evaded by augmenting a constant-depth circuit with fusion measurements, such that the total preparation time is independent of system size and entirely deterministic. We elucidate our preparation scheme using the language of tensor networks, and furthermore show that the ℤ2×ℤ2 symmetry of the AKLT state directly affords this speed-up over previously known preparation methods. To demonstrate the practical advantage of measurement-assisted preparation on noisy intermediate-scale quantum (NISQ) devices, we carry out our protocol on an IBM Quantum processor. We measure both the string order and entanglement spectrum of prepared AKLT chains and, employing these as metrics, find improved results over the known (purely unitary) sequential preparation approach. We conclude with a demonstration of quantum teleportation using the AKLT state prepared by our measurement-assisted scheme. This work thus serves to provide an efficient strategy to prepare a specific resource in the form of the AKLT state and, more broadly, experimentally demonstrates the possibility for realizable improvement in state preparation afforded by measurement-based circuit depth reduction strategies on NISQ-era devices.<br /></li>
-</ul></li>
-
-<li><b>Efficient classical algorithms for simulating symmetric quantum systems</b><br />
-Eric R. Anschuetz, Andreas Bauer, Bobak T. Kiani, Seth Lloyd<br />
-<a href="https://arxiv.org/pdf/2211.16998.pdf">https://arxiv.org/pdf/2211.16998.pdf</a><br />
-<ul class="org-ul">
-<li>The presence of symmetries can convert an otherwise computationally hard task into an efficient one. In light of recently proposed quantum algorithms that incorporate symmetries in the hope of quantum advantage, we show that with symmetries that are restrictive enough, classical algorithms can efficiently emulate their quantum counterparts. As an example, we show that simulating and finding the ground state of permutation invariant Hamiltonians can be efficiently performed in polynomial classical time, further restricting the possible set of symmetries that provide quantum advantage.<br /></li>
-</ul></li>
-
-<li><b>Scalably learning quantum many-body Hamiltonians from dynamical data</b><br />
-Frederik Wilde, Augustine Kshetrimayum, Ingo Roth, Dominik Hangleiter, Ryan Sweke, Jens Eisert<br />
-<a href="https://arxiv.org/pdf/2209.14328.pdf">https://arxiv.org/pdf/2209.14328.pdf</a><br />
-<ul class="org-ul">
-<li>The physics of a closed quantum mechanical system is governed by its Hamiltonian. However, in most practical situations, this Hamiltonian is not precisely known, and ultimately all there is are data obtained from measurements on the system. In this work, we introduce a highly scalable, data-driven approach to learning families of interacting many-body Hamiltonians from dynamical data, by bringing together techniques from gradient-based optimization from machine learning with efficient quantum state representations in terms of tensor networks. Our approach is highly practical, experimentally friendly, and intrinsically scalable to allow for system sizes of above 100 spins. In particular, we demonstrate on synthetic data that the algorithm works even if one is restricted to one simple initial state, a small number of single-qubit observables, and time evolution up to relatively short times. For the concrete example of the one-dimensional Heisenberg model our algorithm exhibits an error constant in the system size and scaling as the inverse square root of the size of the data set.<br /></li>
-</ul></li>
-
-<li><b>Universal quantum circuits for quantum chemistry</b><br />
-Juan Miguel Arrazola, Olivia Di Matteo, Nicolás Quesada, Soran Jahangiri, Alain Delgado, and Nathan Killoran<br />
-<a href="https://quantum-journal.org/papers/q-2022-06-20-742/">https://quantum-journal.org/papers/q-2022-06-20-742/</a><br />
-<ul class="org-ul">
-<li>Universal gate sets for quantum computing have been known for decades, yet no universal gate set has been proposed for particle-conserving unitaries, which are the operations of interest in quantum chemistry. In this work, we show that controlled single-excitation gates in the form of Givens rotations are universal for particle-conserving unitaries. Single-excitation gates describe an arbitrary U(2) rotation on the two-qubit subspace spanned by the states |01⟩,|10⟩, while leaving other states unchanged – a transformation that is analogous to a single-qubit rotation on a dual-rail qubit. The proof is constructive, so our result also provides an explicit method for compiling arbitrary particle-conserving unitaries. Additionally, we describe a method for using controlled single-excitation gates to prepare an arbitrary state of a fixed number of particles. We derive analytical gradient formulas for Givens rotations as well as decompositions into single-qubit and CNOT gates. Our results offer a unifying framework for quantum computational chemistry where every algorithm is a unique recipe built from the same universal ingredients: Givens rotations.<br /></li>
-</ul></li>
-
-<li><b>Provably accurate simulation of gauge theories and bosonic systems</b><br />
-Yu Tong, Victor V. Albert, Jarrod R. McClean, John Preskill, and Yuan Su<br />
-<a href="https://quantum-journal.org/papers/q-2022-09-22-816/">https://quantum-journal.org/papers/q-2022-09-22-816/</a><br />
-<ul class="org-ul">
-<li>Quantum many-body systems involving bosonic modes or gauge fields have infinite-dimensional local Hilbert spaces which must be truncated to perform simulations of real-time dynamics on classical or quantum computers. To analyze the truncation error, we develop methods for bounding the rate of growth of local quantum numbers such as the occupation number of a mode at a lattice site, or the electric field at a lattice link. Our approach applies to various models of bosons interacting with spins or fermions, and also to both abelian and non-abelian gauge theories. We show that if states in these models are truncated by imposing an upper limit Λ on each local quantum number, and if the initial state has low local quantum numbers, then an error at most ϵ can be achieved by choosing Λ to scale polylogarithmically with ϵ−1, an exponential improvement over previous bounds based on energy conservation. For the Hubbard-Holstein model, we numerically compute a bound on Λ that achieves accuracy ϵ, obtaining significantly improved estimates in various parameter regimes. We also establish a criterion for truncating the Hamiltonian with a provable guarantee on the accuracy of time evolution. Building on that result, we formulate quantum algorithms for dynamical simulation of lattice gauge theories and of models with bosonic modes; the gate complexity depends almost linearly on spacetime volume in the former case, and almost quadratically on time in the latter case. We establish a lower bound showing that there are systems involving bosons for which this quadratic scaling with time cannot be improved. By applying our result on the truncation error in time evolution, we also prove that spectrally isolated energy eigenstates can be approximated with accuracy ϵ by truncating local quantum numbers at Λ=polylog(ϵ−1).<br /></li>
-</ul></li>
-
-<li><b>Traversable wormhole dynamics on a quantum processor</b><br />
-Daniel Jafferis, Alexander Zlokapa, Joseph D. Lykken, David K. Kolchmeyer, Samantha I. Davis, Nikolai Lauk, Hartmut Neven &amp; Maria Spiropulu <br />
-<a href="https://www.nature.com/articles/s41586-022-05424-3">https://www.nature.com/articles/s41586-022-05424-3</a><br />
-<ul class="org-ul">
-<li>The holographic principle, theorized to be a property of quantum gravity, postulates that the description of a volume of space can be encoded on a lower-dimensional boundary. The anti-de Sitter (AdS)/conformal field theory correspondence or duality1 is the principal example of holography. The Sachdev–Ye–Kitaev (SYK) model of N ≫ 1 Majorana fermions2,3 has features suggesting the existence of a gravitational dual in AdS2, and is a new realization of holography4,5,6. We invoke the holographic correspondence of the SYK many-body system and gravity to probe the conjectured ER=EPR relation between entanglement and spacetime geometry7,8 through the traversable wormhole mechanism as implemented in the SYK model9,10. A qubit can be used to probe the SYK traversable wormhole dynamics through the corresponding teleportation protocol9. This can be realized as a quantum circuit, equivalent to the gravitational picture in the semiclassical limit of an infinite number of qubits9. Here we use learning techniques to construct a sparsified SYK model that we experimentally realize with 164 two-qubit gates on a nine-qubit circuit and observe the corresponding traversable wormhole dynamics. Despite its approximate nature, the sparsified SYK model preserves key properties of the traversable wormhole physics: perfect size winding11,12,13, coupling on either side of the wormhole that is consistent with a negative energy shockwave14, a Shapiro time delay15, causal time-order of signals emerging from the wormhole, and scrambling and thermalization dynamics16,17. Our experiment was run on the Google Sycamore processor. By interrogating a two-dimensional gravity dual system, our work represents a step towards a program for studying quantum gravity in the laboratory. Future developments will require improved hardware scalability and performance as well as theoretical developments including higher-dimensional quantum gravity duals18 and other SYK-like models.<br /></li>
-</ul></li>
-
-<li><b>A mathematical framework for quantum Hamiltonian simulation and duality</b><br />
-Harriet Apel, Toby Cubitt <br />
-<a href="https://arxiv.org/pdf/2208.11941.pdf">https://arxiv.org/pdf/2208.11941.pdf</a><br />
-<ul class="org-ul">
-<li>Analogue Hamiltonian simulation is a promising near-term application of quantum computing and has recently been put on a theoretical footing. In Hamiltonian simulation, a physical Hamiltonian is engineered to have identical physics to another - often very different - Hamiltonian. This is qualitatively similar to the notion of duality in physics, whereby two superficially different theories are mathematically equivalent in some precise sense. However, existing characterisations of Hamiltonian simulations are not sufficiently general to extend to all dualities in physics. In particular, they cannot encompass the important cases of strong/weak and high-temperature/low-temperature dualities. In this work, we give three physically motivated axiomatisations of duality, formulated respectively in terms of observables, partition functions and entropies. We prove that these axiomatisations are equivalent, and characterise the mathematical form that any duality satisfying these axioms must take. A building block in one of our results is a strengthening of earlier results on entropy-preserving maps to maps that are entropy-preserving up to an additive constant, which we prove decompose as a direct sum of unitary and anti-unitary components, which may be of independent mathematical interest.<br /></li>
-</ul></li>
-
-<li><b>Thermalization without eigenstate thermalization</b><br />
-Aram W. Harrow, Yichen Huang <br />
-<a href="https://scirate.com/arxiv/2209.09826">https://scirate.com/arxiv/2209.09826</a><br />
-<ul class="org-ul">
-<li>In an isolated quantum many-body system undergoing unitary evolution, we study the thermalization of a subsystem, treating the rest of the system as a bath. In this setting, the eigenstate thermalization hypothesis (ETH) was proposed to explain thermalization. Consider a nearly integrable Sachdev-Ye-Kitaev model obtained by adding random all-to-all 4-body interactions as a perturbation to a random free-fermion model. When the subsystem size is larger than the square root of but is still a vanishing fraction of the system size, we prove thermalization if the system is initialized in a random product state, while almost all eigenstates violate the ETH. In this sense, the ETH is not a necessary condition for thermalization.<br /></li>
-</ul></li>
-
-<li><b>Quantum many-body systems in thermal equilibrium</b><br />
-Álvaro M. Alhambra <br />
-<a href="https://arxiv.org/pdf/2204.08349.pdf">https://arxiv.org/pdf/2204.08349.pdf</a><br />
-<ul class="org-ul">
-<li>The thermal or equilibrium ensemble is one of the most ubiquitous states of matter. For models comprised of many locally interacting quantum particles, it describes a wide range of physical situations, relevant to condensed matter physics, high energy physics, quantum chemistry and quantum computing, among others. We give a pedagogical overview of some of the most important universal features about the physics and complexity of these states, which have the locality of the Hamiltonian at its core. We focus on mathematically rigorous statements, many of them inspired by ideas and tools from quantum information theory. These include bounds on their correlations, the form of the subsystems, various statistical properties, and the performance of classical and quantum algorithms. We also include a summary of a few of the most important technical tools, as well as some self-contained proofs.<br /></li>
-</ul></li>
-
-<li><b>A super-polynomial quantum advantage for combinatorial optimization problems</b><br />
-Niklas Pirnay, Vincent Ulitzsch, Frederik Wilde, Jens Eisert, Jean-Pierre Seifert <br />
-<a href="https://arxiv.org/pdf/2212.08678.pdf">https://arxiv.org/pdf/2212.08678.pdf</a><br />
-<ul class="org-ul">
-<li>Combinatorial optimization - a field of research addressing problems that feature strongly in a wealth of practical and industrial contexts - has been identified as one of the core potential fields of applicability of near-term quantum computers. It is still unclear, however, to what extent variational quantum algorithms can actually outperform classical algorithms for this type of problems. In this work, by resorting to computational learning theory and cryptographic notions, we prove that fault-tolerant quantum computers feature a super-polynomial advantage over classical computers in approximating solutions to combinatorial optimization problems. Specifically, building on seminal work of Kearns and Valiant, we construct special instances of the integer programming problem (which in its most general form is NP-complete) that we prove to be hard-to-approximate classically but give an efficient quantum algorithm to approximate the optimal solution of those instances, hence showing a super-polynomial quantum advantage. This result shows that quantum devices have the power to approximate combinatorial optimization solutions beyond the reach of classical efficient algorithms.<br /></li>
-</ul></li>
-
-<li><b>Measurement-induced entanglement phase transitions in variational quantum circuits</b><br />
-Roeland Wiersema, Cunlu Zhou, Juan Felipe Carrasquilla, Yong Baek Kim <br />
-<a href="https://arxiv.org/abs/2111.08035">https://arxiv.org/abs/2111.08035</a><br />
-<ul class="org-ul">
-<li>Variational quantum algorithms (VQAs), which classically optimize a parametrized quantum circuit to solve a computational task, promise to advance our understanding of quantum many-body systems and improve machine learning algorithms using near-term quantum computers. Prominent challenges associated with this family of quantum-classical hybrid algorithms are the control of quantum entanglement and quantum gradients linked to their classical optimization. Known as the barren plateau phenomenon, these quantum gradients may rapidly vanish in the presence of volume-law entanglement growth, which poses a serious obstacle to the practical utility of VQAs. Inspired by recent studies of measurement-induced entanglement transition in random circuits, we investigate the entanglement transition in variational quantum circuits endowed with intermediate projective measurements. Considering the Hamiltonian Variational Ansatz (HVA) for the XXZ model and the Hardware Efficient Ansatz (HEA), we observe a measurement-induced entanglement transition from volume-law to area-law with increasing measurement rate. Moreover, we provide evidence that the transition belongs to the same universality class of random unitary circuits. Importantly, the transition coincides with a &ldquo;landscape transition&rdquo; from severe to mild/no barren plateaus in the classical optimization. Our work paves an avenue for greatly improving the trainability of quantum circuits by incorporating intermediate measurement protocols in currently available quantum hardware.<br /></li>
-</ul></li>
-
-<li><b>Exponentially tighter bounds on limitations of quantum error mitigation</b><br />
-Yihui Quek, Daniel Stilck França, Sumeet Khatri, Johannes Jakob Meyer, Jens Eisert<br />
-<a href="https://arxiv.org/abs/2210.11505">https://arxiv.org/abs/2210.11505</a><br />
-<ul class="org-ul">
-<li>Quantum error mitigation has been proposed as a means to combat unavoidable errors in near-term quantum computing by classically post-processing outcomes of multiple quantum circuits. It does so in a fashion that requires no or few additional quantum resources, in contrast to fault-tolerant schemes that come along with heavy overheads. Error mitigation leads to noise reduction in small systems. In this work, however, we identify strong limitations to the degree to which quantum noise can be effectively `undone&rsquo; for larger system sizes. We start out by presenting a formal framework that rigorously encapsulates large classes of meaningful and practically applied schemes for quantum error mitigation, including virtual distillation, Clifford data regression, zero-noise extrapolation and probabilistic error cancellation. With the framework in place, our technical contribution is to construct families of random circuits that are highly sensitive to noise, in the sense that even at log log(n) depth, a whisker beyond constant, quantum noise is seen to super-exponentially rapidly scramble their output into the maximally-mixed state. Our results exponentially tighten known arguments for error mitigation, but they go beyond that: Our arguments can be applied to kernel estimation or to compute the depth at which barren plateaus emerge, implying that the scrambling kicks in at exponentially smaller depths than previously thought. Our results also say that a noisy device must be sampled exponentially many times to estimate expectation values. There are classical algorithms that exhibit the same scaling in complexity. While improvements in quantum hardware will push noise levels down, if error mitigation is used, ultimately this can only lead to an exponential time quantum algorithm with a better exponent, putting up a strong obstruction to the hope for exponential quantum speedups in this setting.<br /></li>
-</ul></li>
-
-<li><b>Simulating Models of Challenging Correlated Molecules and Materials on the Sycamore Quantum Processor</b><br />
-Ruslan N. Tazhigulov, Shi-Ning Sun, Reza Haghshenas, Huanchen Zhai, Adrian T.K. Tan, Nicholas C. Rubin, Ryan Babbush, Austin J. Minnich, and Garnet Kin-Lic Chan<br />
-<a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040318">https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040318</a><br />
-<ul class="org-ul">
-<li>Simulating complex molecules and materials is an anticipated application of quantum devices. With the emergence of hardware designed to target strong quantum advantage in artificial tasks, we examine how the same hardware behaves in modeling physical problems of correlated electronic structure. We simulate static and dynamical electronic structure on a superconducting quantum processor derived from Google’s Sycamore architecture for two representative correlated electron problems: the nitrogenase iron-sulfur molecular clusters and α-ruthenium trichloride, a proximate spin-liquid material. To do so, we simplify the electronic structure into low-energy spin models that fit on the device. With extensive error mitigation and assistance from classical recompilation and simulated data, we achieve quantitatively meaningful results deploying about one fifth of the gate resources used in artificial quantum advantage experiments on a similar architecture. This increases to over half of the gate resources when choosing a model that suits the hardware. Our work serves to convert artificial measures of quantum advantage into a physically relevant setting.<br /></li>
-</ul></li>
-
-</ul>
-</details>
-<br><br>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">QAMBS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarContent" aria-controls="navbarContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#past-meetings">Past Meetings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#future-topics">Future Topics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#calendar">Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mailing-list">Mailing List</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container my-4">
+    <!-- Header Section -->
+    <header class="mb-4">
+      <h1 class="display-4">QAMBS</h1>
+      <p class="lead">A seminar/journal club/reading group on Quantum Algorithms for Many Body Systems.</p>
+      <p>Keywords: integrability, dual-unitarity, ground state preparation, time evolution, entanglement generation and propagation, tensor networks, topological phases.</p>
+    </header>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="mb-5">
+      <h2>Schedule</h2>
+      <p>From 11:00 to 12:00, every other Tuesday of the month, at <a href="https://uva-live.zoom.us/j/2529289100" target="_blank">this Zoom link</a>. First 45 minutes: presentation of own work or a talk by an invited speaker. Remaining time: questions and discussion.</p>
+
+      <!-- Schedule Items as Cards -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">08/04/25</h5>
+          <p class="card-text">
+            <strong>Eric Vernier (CNRS)</strong><br>
+            <em>Strong zero modes in integrable quantum circuits</em><br>
+            <a href="https://arxiv.org/abs/2401.12305" target="_blank">https://arxiv.org/abs/2401.12305</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">22/04/25</h5>
+          <p class="card-text">
+            <strong>Rustem Sharipov (University of Ljubljana)</strong><br>
+            <em>Ergodic behaviors in reversible 3-state cellular automata</em><br>
+            <a href="https://arxiv.org/abs/2503.16593" target="_blank">https://arxiv.org/abs/2503.16593</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">06/05/25</h5>
+          <p class="card-text">
+            <strong>Maximilian Lutz</strong><br>
+            <em>Adiabatic quantum state preparation in integrable models</em><br>
+            <a href="https://arxiv.org/abs/2503.21741" target="_blank">https://arxiv.org/abs/2503.21741</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar Embed Section -->
+    <section id="calendar" class="mb-5">
+      <h2>Calendar synchronization</h2>
+      <p>You can automatically update the QAMBS appointments in your calendar by pressing 'Subscribe' in the calendar box below.</p>
+      <iframe src="https://embed.styledcalendar.com/#3btQDK6hxjVYgMnbMpn8" title="Styled Calendar" class="w-100" style="border: none; height: 400px;"></iframe>
+      <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+    </section>
+
+    <!-- Future Topics / Poll Section -->
+    <section id="future-topics" class="mb-5">
+      <h2>Preparing for future sessions - Choose your topics!</h2>
+      <p>In the poll below you can propose any research question you would like to address during our seminars. Please do this, so that we can shape the seminar cycle in the most beneficial way for us all.</p>
+      <div class="d-flex justify-content-center">
+        <div class="strawpoll-embed" id="strawpoll_61gDmKlzWZw" style="height: 708px; max-width: 640px; width: 100%;">
+          <iframe title="StrawPoll Embed" id="strawpoll_iframe_61gDmKlzWZw" src="https://strawpoll.com/embed/61gDmKlzWZw" style="width: 100%; height: 100%;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe>
+          <script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Meetings Section -->
+    <section id="past-meetings" class="mb-5">
+      <h2>Past meetings</h2>
+      <details>
+        <summary>Click to expand the list of past meetings</summary>
+        <div class="mt-3">
+          <!-- Past Meeting Items as Cards -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">25/03/25</h5>
+              <p class="card-text">
+                <strong>Nicolas Laflorencie (CNRS)</strong><br>
+                <em>Universal signatures of Majorana zero modes in critical Kitaev chains</em><br>
+                <a href="https://arxiv.org/abs/2311.07571" target="_blank">https://arxiv.org/abs/2311.07571</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">25/02/25</h5>
+              <p class="card-text">
+                <strong>Alexander Miessen (IBM Research – Zürich, University of Zürich)</strong><br>
+                <em>Benchmarking digital quantum simulations above hundreds of qubits using quantum critical dynamics</em><br>
+                <a href="https://arxiv.org/abs/2404.08053" target="_blank">https://arxiv.org/abs/2404.08053</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">11/02/25</h5>
+              <p class="card-text">
+                <strong>Hyeonjun Yeo (Seoul National University)</strong><br>
+                <em>Reducing Circuit Depth in Quantum State Preparation for Quantum Simulation Using Measurements and Feedforward</em><br>
+                <a href="https://arxiv.org/abs/2501.02929" target="_blank">https://arxiv.org/abs/2501.02929</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">28/01/25</h5>
+              <p class="card-text">
+                <strong>Alberto Zorzato (Amsterdam)</strong><br>
+                <em>Brick Wall Quantum Circuits with Global Fermionic Symmetry</em><br>
+                <a href="https://arxiv.org/abs/2402.18440" target="_blank">https://arxiv.org/abs/2402.18440</a>
+              </p>
+            </div>
+          </div>
+          <!-- Continue adding past meeting cards as needed -->
+        </div>
+      </details>
+    </section>
+
+    <!-- Mailing List Section -->
+    <section id="mailing-list" class="mb-5">
+      <h2>Mailing list</h2>
+      <p>You can sign up to the mailing list by sending an email to <em>qambs+subscribe@googlegroups.com</em>. After you signed up, you can send emails to the list by sending the email to <em>qambs@googlegroups.com</em>.</p>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="mb-5">
+      <h2>Organizers</h2>
+      <p>K. Schoutens and A. Zorzato (we thank the previous organizer J. Kattemölle for allowing us to use the pre-existing infrastructure for the website)</p>
+    </section>
   </div>
-</div>
+
+  <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
